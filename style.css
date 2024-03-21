@@ -8,23 +8,26 @@
 
 :root{
   --text-color: white;
-  --bg:url(/assets/assets/bg-mobile.jpg);
+  --bg:url(/images/bg-dark.jpg);
   --stroke-color: rgba(255,255,255,0.5);
   --surface-color: rgba(255,255,255,0.1);
   --hover-bg: rgba(255,255,255,0.05);
   --social-link-hover:rgba(255,255,255,0.2);
   --switch-bg-url: url(assets/assets/moon-stars.svg);
+  --image-bg: white;
+ 
 
 }
 
 .light{
   --text-color: black;
-  --bg:url(/assets/assets/bg-mobile-light.jpg);
+  --bg:url(/images/bg-light.jpg);
   --stroke-color:black;
   --surface-color: rgba(0,0,0,0.1);
   --hover-bg: rgba(0,0,0,0.05);
   --social-link-hover:rgba(0,0,0,0.2);
   --switch-bg-url: url(assets/assets/sun.svg);
+  --image-bg: none;
 }
 
 body{
@@ -43,7 +46,7 @@ body{
 
 
 
-body * {
+body * {  
   font-family: "Inter", sans-serif;
   color: var(--text-color)
   
@@ -68,6 +71,8 @@ body * {
 
 #profile img {
   width: 112px;
+  border-radius: 50%;
+  background: var(--image-bg);
 }
 
 #profile p{
