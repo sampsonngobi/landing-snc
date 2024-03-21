@@ -24,7 +24,7 @@ function toggleMode(){
     if(html.classList.contains('light')) {
 
     //if  it is light, select the ligh image
-        img.setAttribute("src", 'images/Profile.png')
+        img.setAttribute("src", 'images/profile.png')
     //if not use the normal image 
     }else{
         img.setAttribute("src", "images/profile-light.png")   
